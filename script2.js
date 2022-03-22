@@ -2,13 +2,8 @@
 const num = "266219";
 const numArray = num.split("");
 
+const result = numArray.reduce((mult, item) => mult * item);
 
-
-let result = numArray.reduce(function(mult, item){
-
-     return mult * item;
-
-});
 const resultDegree = result**3;
 
 console.log("Умножение чисел = " + result);
