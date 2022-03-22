@@ -2,7 +2,7 @@
 
 // Вывести все дни недели
 
-let lang = prompt('введите значение_дни недели');
+const lang = prompt('введите значение', 'ru/en');
 
 // через if
 
@@ -23,15 +23,15 @@ switch (lang){
 }
 
 // через масив 
-let masRU = ['Понедельник, вторник, среда, четверг, пятница, суббота, воскресенье'];
-let masEn = ['Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday'];
+const masRU = ['Понедельник, вторник, среда, четверг, пятница, суббота, воскресенье'];
+const masEn = ['Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday'];
 
 lang === 'ru' ? console.log(masRU) :  false;
 lang === 'en' ? console.log(masEn) : false;
 
  
 // Имена и должности
-let namePerson = prompt('введите значение_Имя');
+const namePerson = prompt('введите значение', 'Артем / Максим или другое');
 
 namePerson === 'Артем' ? console.log('директор') : false; 
 namePerson === 'Максим' ? console.log('преподаватель') : false; 
